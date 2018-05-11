@@ -24,4 +24,7 @@
   </div>
 
   <%= render 'footer' %>
-  <%= render 'simple_calendar/calendar' %>
+  
+  <%= month_calendar do |date| %>
+    <%= date %>
+    <% end %>
