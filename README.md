@@ -10,6 +10,12 @@ View the site here: TBD
 * Scheduler tool
 * Admin and user profiles
 
+### Design
+
+* Minimalistic in the same vein as my portfolio website
+* Black & white color scheme to allow photos of the cabin to pop
+* See sketch in notebook for details 
+
 ### Technologies Used
 
 * Ruby/Rails
