@@ -1,0 +1,31 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 430px;
+  font-family: 'Gudea', sans-serif;
+}
+
+.navbar h1 {
+  font-family: 'Cantarell', sans-serif;
+}
+
+.logo {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 430px;
+}
+
+
+.nav navbar-nav {
+  color: #121212 !important;
+  text-decoration: none !important;
+}
