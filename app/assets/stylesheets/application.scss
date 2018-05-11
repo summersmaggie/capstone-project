@@ -11,11 +11,11 @@
 }
 
 .navbar h1 {
-  font-family: 'Cantarell', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 .logo {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 50px;
   display: block;
   margin-left: auto;
@@ -24,8 +24,28 @@
   width: 430px;
 }
 
-
 .nav navbar-nav {
   color: #121212 !important;
   text-decoration: none !important;
+}
+
+.footer {
+  // position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Gudea', sans-serif;
+}
+
+#home {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+#homepage-nav {
+  padding-left: 50px;
+  padding-top: 150px;
 }

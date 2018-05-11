@@ -1,5 +1,26 @@
-<div class="container">
-  <%= render 'navbar' %>
+  <div class="container" id="home">
+    <div class="row">
+      <div class="col-sm-6" id="homepage-img">
+        <%= link_to image_tag("wooden-tent-2.jpg", :alt => "front-of-cabin", size: "600x600"), '/' %>
+      </div>
+      <div class="col-sm-6" id="homepage-nav">
+        <ul class="nav navbar-nav">
+          <div class="logo">
+            <h1>The Wooden Tent<h1>
+            <h3>Mount Hood National Forest<h3>
+            <em><h5>45.3322&#176; N, 121.7094&#176; W</h5></em>
+          </div>
+          <li><%= link_to "CALENDAR", '/' %></li>
+          <li><%= link_to "MAKE A RESERVATION", '/work_samples' %></li>
+          <% if current_user %>
+          <li><%= link_to "SIGN OUT", '/users/sign_out', method: 'delete' %></li>
+          <% else %>
+          <li><%= link_to "SIGN UP", '/users/sign_up' %></li>
+          <li><%= link_to "SIGN IN", '/users/sign_in' %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-
-</div>
+  <%= render 'footer' %>

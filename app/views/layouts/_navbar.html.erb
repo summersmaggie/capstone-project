@@ -1,20 +1,3 @@
 <div class="logo">
   <h1>THE WOODEN TENT</h1>
 </div>
-
-<div class="navbar">
-  <nav class="navbar navbar-transparent">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><%= link_to "CALENDAR", '/' %></li>
-        <li><%= link_to "MAKE A RESERVATION", '/work_samples' %></li>
-        <% if current_user %>
-        <li><%= link_to "SIGN OUT", '/users/sign_out', method: 'delete' %></li>
-        <% else %>
-        <li><%= link_to "SIGN UP", '/users/sign_up' %></li>
-        <li><%= link_to "SIGN IN", '/users/sign_in' %></li>
-        <% end %>
-      </ul>
-    </div>
-  </nav>
-</div>

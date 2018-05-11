@@ -1,0 +1,6 @@
+<footer class="footer">
+  <% if current_user && current_user.admin %>
+    <p><%= link_to "ADMIN DASHBOARD", '/admin' %></p>
+  <% end %>
+  <p>© Maggie Summers</p>
+</footer>
