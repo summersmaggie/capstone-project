@@ -1,6 +1,5 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
 
   # GET /reservations
   # GET /reservations.json
@@ -15,7 +14,7 @@ class ReservationsController < ApplicationController
 
   # GET /reservations/new
   def new
-    @reservation = Reservation.new
+    @reservation = current_user.reservations.build
   end
 
   # GET /reservations/1/edit
@@ -25,11 +24,10 @@ class ReservationsController < ApplicationController
   # POST /reservations
   # POST /reservations.json
   def create
-    @reservation = Reservation.new(reservation_params)
-    @reservation.user_id = current_user.id
+    @reservation = current_user.reservations.build(reservation_params)
 
     respond_to do |format|
-      if @reservation.user_id.save
+      if @reservation.save
         format.html { redirect_to @reservation, notice: 'Reservation was successfully created.' }
         format.json { render :show, status: :created, location: @reservation }
       else
