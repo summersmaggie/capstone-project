@@ -9,6 +9,7 @@
           <li><%= link_to "HOME", '/' %></li>
           <li><%= link_to "CALENDAR", '/calendars' %></li>
           <li><%= link_to "MAKE A RESERVATION", '/reservations/new' %></li>
+          <li><%= link_to "LIST OF RESERVATIONS", '/reservations' %></li>
           <% if current_user %>
           <li><%= link_to "SIGN OUT", '/users/sign_out', method: 'delete' %></li>
           <% else %>
