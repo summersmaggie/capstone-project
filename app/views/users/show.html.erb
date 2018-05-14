@@ -1,1 +1,5 @@
 <p><%= @user.email %></p>
+
+<% @user_reservations.each do |reservation| %>
+  <%= reservation.name %>
+<% end %>
