@@ -9,7 +9,7 @@
           <em><h5>45.3322&#176; N, 121.7094&#176; W</h5></em>
         </div>
         <ul class="nav">
-            <li><%= link_to "CALENDAR", '/calendar' %></li>
+            <li><%= link_to "CALENDAR", '/calendars' %></li>
             <li><%= link_to "MAKE A RESERVATION", '' %></li>
           <% if current_user %>
             <li><%= link_to "SIGN OUT", '/users/sign_out', method: 'delete' %></li>
@@ -24,7 +24,3 @@
   </div>
 
   <%= render 'footer' %>
-  
-  <%= month_calendar do |date| %>
-    <%= date %>
-    <% end %>

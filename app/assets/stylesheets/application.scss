@@ -1,3 +1,6 @@
+/*
+*= require simple_calendar
+*/
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -8,18 +11,29 @@
   list-style-type: none;
 }
 
+#navbar {
+  align-items: left;
+}
+
+.navbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Gudea', sans-serif;
+}
+
 .home-logo {
   font-family: 'Poiret One', cursive;
 }
 
 .logo {
-  padding-top: 30px;
-  padding-bottom: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  width: 430px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'Poiret One', cursive;
+  text-decoration: none;
 }
 
 .home-logo {
