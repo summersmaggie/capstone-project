@@ -7,10 +7,10 @@
       <nav class="navbar navbar-transparent">
         <ul class="nav navbar-nav">
           <li><%= link_to "HOME", '/' %></li>
-          <li><%= link_to "MAKE A RESERVATION", '' %></li>
+          <li><%= link_to "CALENDAR", '/calendars' %></li>
+          <li><%= link_to "MAKE A RESERVATION", '/reservations/new' %></li>
           <% if current_user %>
           <li><%= link_to "SIGN OUT", '/users/sign_out', method: 'delete' %></li>
-          <li>Hello <%= current_user.email %>!</li>
           <% else %>
           <li><%= link_to "SIGN UP", '/users/sign_up' %></li>
           <li><%= link_to "SIGN IN", '/users/sign_in' %></li>

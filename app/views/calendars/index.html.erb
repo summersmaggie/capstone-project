@@ -1,11 +1,11 @@
 <%= render 'layouts/navbar' %>
 
 <div class="container">
-  <%= month_calendar events: @meetings do |date, meetings| %>
+  <%= month_calendar events: @reservations do |date, reservations| %>
     <%= date %>
-    <% meetings.each do |meeting| %>
+    <% reservations.each do |reservation| %>
         <div>
-          <%= meeting.name %>
+          <%= reservation.name %>
         </div>
       <% end %>
   <% end %>

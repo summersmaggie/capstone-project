@@ -1,5 +1,5 @@
 class CalendarsController < ApplicationController
   def index
-    @meetings = Meeting.all
+    @reservations = Reservation.all
   end
 end

@@ -1,5 +1,8 @@
-<h1>New Meeting</h1>
+<%= render 'layouts/navbar' %>
 
-<%= render 'form', meeting: @meeting %>
+<div class="container" id="new-meeting">
+  <h1>New Reservation</h1>
 
-<%= link_to 'Back', meetings_path %>
+  <%= render 'form', meeting: @meeting %>
+
+  <%= link_to 'Back', meetings_path %>

@@ -1,0 +1,9 @@
+<%= render 'layouts/navbar' %>
+
+<div class="container" id="new-reservation">
+  <h1>New Reservation</h1>
+
+  <%= render 'form', reservation: @reservation %>
+
+  <%= link_to 'Back', reservations_path %>
+</div>
