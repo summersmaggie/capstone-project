@@ -1,6 +1,12 @@
-<h1>Editing Reservation</h1>
+<%= render 'layouts/navbar' %>
 
-<%= render 'form', reservation: @reservation %>
+<div class="container" id="edit-reservation">
+  <h1>Editing Reservation</h1>
 
-<%= link_to 'Show', @reservation %> |
-<%= link_to 'Back', reservations_path %>
+  <%= render 'form', reservation: @reservation %>
+
+  <%= link_to 'Show', @reservation %> |
+  <%= link_to 'Back', reservations_path %>
+</div>
+
+<%= render 'layouts/footer' %>
