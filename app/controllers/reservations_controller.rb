@@ -11,7 +11,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/1.json
   def show
     @reservation = Reservation.find(params[:id])
-    user = @reservation.user_id
+    @user = @reservation.user_id
     @reserved_by = @reservation.user.username
   end
 

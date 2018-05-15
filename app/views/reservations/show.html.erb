@@ -9,7 +9,7 @@
 
   <p>
     <strong>Reserved By:</strong>
-    <%= @reserved_by %>
+    <%= link_to @reserved_by, user_path(@user) %>
   </p>
 
   <p>
@@ -22,7 +22,9 @@
     <%= @reservation.end_time %>
   </p>
 
-  <%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+  <% if current_user.id == @reservation.user_id %>
+    <%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+  <% end %>
   <%= link_to 'List of Reservations', reservations_path %> |
   <%= link_to 'Calendar', calendars_path %>
 </div>
