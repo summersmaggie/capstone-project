@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, :except => [:index]
   # GET /reservations
   # GET /reservations.json
   def index
