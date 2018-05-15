@@ -2,7 +2,7 @@
 
 <div class="container" id="calendar-view">
   <%= month_calendar events: @reservations do |date, reservations| %>
-    <%= date %>
+    <%= date.day %>
     <% reservations.each do |reservation| %>
         <div>
           <strong><%= link_to reservation.name, reservation_path(reservation) %></strong>
