@@ -29,7 +29,10 @@
 
   <% if current_user.id == @reservation.user_id %>
     <%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+  <% elsif current_user.admin %>
+    <%= link_to 'Edit', edit_reservation_path(@reservation) %> |
   <% end %>
+
   <%= link_to 'List of Reservations', reservations_path %> |
   <%= link_to 'Calendar', calendars_path %>
 </div>
