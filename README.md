@@ -2,7 +2,9 @@
 
 This minimalistic scheduler tool will allow my family to schedule visits to our cabin in Mt. Hood National Forest, so we can minimize the back and forth of scheduling via texts and calls and so there is one place to go to see the upcoming schedule. Despite the myriad of tools already available, we haven't been able to find one that sticks for everyone.
 
-View the site here: TBD
+View the site here: https://bit.ly/2wHw4lT
+
+<kbd><img src="app/assets/images/wooden-tent.png"></img></kbd>
 
 ### Main Features
 
@@ -13,8 +15,7 @@ View the site here: TBD
 ### Design
 
 * Minimalistic in the same vein as my portfolio website
-* Black & white color scheme to allow photos of the cabin to pop
-* See sketch in notebook for details
+* Black & white color scheme to allow cabin to pop
 
 ### Technologies Used
 
