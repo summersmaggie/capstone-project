@@ -6,6 +6,9 @@
   <% @user_reservations.each do |reservation| %>
   <li><%= reservation.name %>, <%= reservation.start_time %> - <%= reservation.end_time %></li>
   <% end %>
+
+  <br>
+  <p><%= link_to 'Edit Profile', edit_user_registration_path(@user) %></p>
 </div>
 
 <%= render 'layouts/footer' %>

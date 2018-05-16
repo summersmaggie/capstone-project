@@ -12,6 +12,7 @@
           <li><%= link_to "UPCOMING RESERVATIONS", '/reservations' %></li>
           <% if current_user %>
           <li><%= link_to "SIGN OUT", '/users/sign_out', method: 'delete' %></li>
+          <li><%= link_to current_user.username.upcase, user_path(current_user) %></li>
           <% else %>
           <li><%= link_to "SIGN UP", '/users/sign_up' %></li>
           <li><%= link_to "SIGN IN", '/users/sign_in' %></li>
