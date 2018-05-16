@@ -2,9 +2,12 @@
 
 <div class="container" id="unique-user">
   <p><%= @user.username %>'s upcoming reservations:</p>
-
-  <% @user_reservations.each do |reservation| %>
-  <li><%= reservation.name %>, <%= reservation.start_time %> - <%= reservation.end_time %></li>
+  <% if @user.reservations.any? %>
+    <% @user_reservations.each do |reservation| %>
+    <li><%= reservation.name %>, <%= reservation.start_time %> - <%= reservation.end_time %></li>
+    <% end %>
+  <% else %>
+    <p>You have no reservations yet. Make one <a href="/reservations/new">now!</a></p>
   <% end %>
 
   <br>
