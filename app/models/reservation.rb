@@ -6,7 +6,7 @@ class Reservation < ApplicationRecord
   validates :start_time, :presence => true
   validates :start_time, uniqueness: {
    message: "That start date is already taken!" }
- validates :end_time, :presence => true
- validates :end_time, uniqueness: {
+  validates :end_time, :presence => true
+  validates :end_time, uniqueness: {
   message: "That end date is already taken!" }
 end

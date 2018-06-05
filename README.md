@@ -9,13 +9,18 @@ View the site here: https://bit.ly/2wHw4lT
 ### Main Features
 
 * Calendar view
-* Scheduler tool
+* Scheduler tool, including error handling for scheduling conflicts
 * User profiles
 
 ### Design
 
 * Minimalistic in the same vein as my portfolio website
 * Black & white color scheme to allow cabin to pop
+
+### To-Do
+
+* Add ability to upload photos of the cabin
+* Add messaging capabilities for people who run into a scheduling conflict to be able to send an email asking if they can switch days or adjust timelines.
 
 ### Technologies Used
 
